@@ -1,0 +1,114 @@
+/* Configuração do fundo e fonte da página */
+body {
+  background-color: #f7f7f7;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuração do cabeçalho */
+.header {
+  align-items: center;
+  background-color: #292929;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Configuração do botão de mudança de temas */
+#mudarTemas {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Configuração do campo de entrada de texto */
+#input {
+  background-color: #ffffff;
+  border: none;
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  text-align: right;
+  width: 100%;
+}
+
+/* Configuração do container dos botões */
+#chaves {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* Configuração dos botões de valor */
+.buttonValue {
+  background-color: #d9d9d9;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* Configuração dos botões de operação */
+.buttonValue[data-value=" / "],
+.buttonValue[data-value=" * "],
+.buttonValue[data-value=" - "],
+.buttonValue[data-value=" + "],
+.buttonValue[data-value=" % "] {
+  background-color: #ffa500;
+  color: #ffffff;
+}
+
+/* Configuração do botão de igualdade */
+#equal {
+  background-color: #00bfff;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  grid-column: 3 / span 2;
+  padding: 1rem;
+}
+
+/* Configuração do container do resultado */
+.copiarResultado {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Configuração do botão de cópia */
+#clickCopiar {
+  background-color: #292929;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/* Configuração do campo de resultado */
+#resultado {
+  background-color: #ffffff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-align: right;
+  width: 75%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
